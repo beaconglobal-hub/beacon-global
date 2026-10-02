@@ -8,6 +8,8 @@ The original handoff and build spec are historical references. Their QA claims d
 
 ## Deployment
 
+Vercel's Next.js adapter reads build metadata from `.next`, so `vercel.json` uses that output directory. The standalone static export for local preview remains in `out/`. Pointing the adapter at `out` caused the first deployment to fail after a successful build because `routes-manifest.json` lives in `.next`.
+
 Repository verification on October 2, 2026: production export built successfully with Webpack, TypeScript checking passed, and all 120 automated desktop/mobile checks passed. Home screenshots were visually reviewed at both widths. Browser checks include client runtime errors and mobile menu navigation. Real-device video playback, external destination ownership, domain configuration, and organization records remain outside those automated checks.
 
 1. Import this repository into a separate `beacon-global` Vercel project in the God's Beacon team. Set the root directory to the repository root and select Node.js 24.

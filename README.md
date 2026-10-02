@@ -29,7 +29,7 @@ Optional utilities: `npm run og` regenerates the social image; `npm run preview`
 
 ## Vercel
 
-Import this repository into a separate `beacon-global` project in the same Vercel team as God's Beacon. Use the repository root, Next.js preset, and Node.js 24. `vercel.json` specifies installation, build, and static output settings. No environment variables are needed.
+Import this repository into a separate `beacon-global` project in the same Vercel team as God's Beacon. Use the repository root, Next.js preset, and Node.js 24. `vercel.json` specifies installation and build settings, with `.next` as the adapter's build directory. The local static export remains in `out/`. No environment variables are needed.
 
 Review a preview deployment, then attach `beaconglobal.org` and `www.beaconglobal.org`. The canonical URL currently uses `https://beaconglobal.org`. Apply Vercel's DNS values while preserving email records and nameservers. Production must be accessible without authentication before submitting its URL to Apple.
 
