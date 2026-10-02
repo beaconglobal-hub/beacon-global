@@ -1,0 +1,7 @@
+*.zip
+design/
+docs/
+qa/
+preview/
+HANDOFF.md
+*.tsbuildinfo

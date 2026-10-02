@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme only. Names match godsbeacon.org so tokens transfer directly. */
+@layer base {
+  :root {
+    --background: 204.2 78.8% 12.9%; /* #07263B page */
+    --foreground: 214 68% 93%; /* #E1ECF9 body text */
+    --card: 206 52% 16%; /* #142C3E */
+    --card-foreground: 0 0% 100%;
+    --muted: 206 43% 23%; /* #213E54 dividers */
+    --muted-foreground: 210 24% 67%; /* #97ABBF labels */
+    --border: 208 34% 35%; /* #3B5B78 strong borders */
+    --primary: 45 100% 60%; /* #FFCC33 action + scripture */
+    --primary-hover: 45 100% 72%; /* #FFDB70 */
+    --primary-foreground: 204 90% 8%; /* #021827 */
+    --ring: 187 100% 65%; /* #4DEAFF */
+    --link: 187 100% 65%; /* #4DEAFF */
+    --link-hover: 193 98% 83%; /* #A9ECFE */
+    --eyebrow: 193 98% 83%; /* #A9ECFE */
+    --blue-900: 204 90% 8%; /* #021827 deep bands, footer */
+    --radius: 10px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  a {
+    @apply text-link underline decoration-1 underline-offset-[3px] transition-colors duration-150 hover:text-link-hover;
+  }
+  a:focus-visible,
+  button:focus-visible {
+    @apply rounded-[6px] outline outline-2 outline-offset-[3px] outline-ring;
+  }
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-container px-gutter;
+  }
+  .eyebrow {
+    @apply text-label font-semibold uppercase tracking-[0.08em] text-eyebrow;
+  }
+  .btn {
+    @apply inline-flex min-h-[50px] items-center gap-2 rounded px-6 text-base no-underline transition-colors duration-150;
+  }
+  .btn-primary {
+    @apply btn bg-primary font-bold text-primary-foreground hover:bg-primary-hover hover:text-primary-foreground;
+  }
+  .btn-outline {
+    @apply btn border border-border bg-transparent font-semibold text-white hover:border-muted-foreground hover:bg-card hover:text-white;
+  }
+  .link-cta {
+    @apply inline-flex min-h-[44px] items-center gap-1.5 self-start text-base font-semibold;
+  }
+}

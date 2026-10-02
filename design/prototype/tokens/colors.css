@@ -1,0 +1,58 @@
+:root {
+  /* Base palette — from godsbeacon.org product CSS (dark theme only) */
+  --blue-950: #07263B;      /* page background */
+  --blue-900: #021827;      /* deep band, footer, scripture */
+  --blue-800: #142C3E;      /* card */
+  --blue-700: #213E54;      /* dividers, subtle borders */
+  --blue-500: #3B5B78;      /* strong borders, outline buttons */
+  --blue-200: #97ABBF;      /* muted text */
+  --blue-50:  #E1ECF9;      /* body text */
+  --white:    #FFFFFF;
+  --bright-teal: #4DEAFF;
+  --dull-teal:   #A9ECFE;
+  --yellow-400:  #FFCC33;
+  --yellow-300:  #FFDB70;
+
+  /* Logo palette — use for brand illustration only, never UI */
+  --logo-navy:   #00386C;
+  --logo-orange: #F16122;
+  --logo-amber:  #F7941D;
+  --logo-yellow: #FFCC32;
+  --logo-yellow-2: #FFDE2F;
+  --logo-pale:   #FFEBAA;
+
+  /* Semantic */
+  --bg-page:   var(--blue-950);
+  --bg-deep:   var(--blue-900);
+  --bg-card:   var(--blue-800);
+  --bg-muted:  var(--blue-700);
+  --border-subtle: var(--blue-700);
+  --border-strong: var(--blue-500);
+  --fg-1: var(--white);        /* headings, names, values */
+  --fg-2: var(--blue-50);      /* body copy */
+  --fg-muted: var(--blue-200); /* labels, secondary copy */
+  --eyebrow: var(--dull-teal);
+  --link: var(--bright-teal);
+  --link-hover: var(--dull-teal);
+  --accent: var(--yellow-400);
+  --accent-hover: var(--yellow-300);
+  --on-accent: var(--blue-900);
+  --focus-ring: var(--bright-teal);
+  --citation: var(--yellow-400);
+
+  /* Photo scrims (navy, never black) */
+  --scrim-bottom: linear-gradient(180deg, rgba(2,24,39,0.05) 0%, rgba(2,24,39,0.3) 40%, rgba(2,24,39,0.95) 80%);
+  --scrim-side: linear-gradient(90deg, rgba(2,24,39,0.62) 0%, rgba(2,24,39,0.72) 40%, rgba(2,24,39,0.95) 68%);
+
+  /* shadcn-style HSL channels (Tailwind v3) — same names as the product */
+  --background: 204.2 78.8% 12.9%;
+  --foreground: 214 68% 93%;
+  --card: 206 52% 16%;
+  --card-foreground: 0 0% 100%;
+  --muted: 206 43% 23%;
+  --muted-foreground: 210 24% 67%;
+  --border: 208 34% 35%;
+  --primary: 45 100% 60%;
+  --primary-foreground: 204 90% 8%;
+  --ring: 187 100% 65%;
+}

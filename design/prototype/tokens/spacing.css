@@ -1,0 +1,28 @@
+:root {
+  --space-1: 4px;
+  --space-2: 6px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 18px;
+  --space-7: 22px;
+  --space-8: 28px;
+  --space-9: 40px;
+  --space-10: 56px;
+  --space-11: 72px;
+
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --section-y: clamp(64px, 8vw, 104px);
+  --card-pad: clamp(24px, 3.4vw, 40px);
+
+  --radius: 10px;
+  --radius-rule: 2px;
+  --rule-w: 40px;
+  --rule-h: 3px;
+  --border-w: 1px;
+
+  --touch-min: 44px;
+  --header-h: 72px;
+  --bp-nav: 880px;
+}
