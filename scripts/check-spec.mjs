@@ -125,7 +125,7 @@ for (const [vp, size] of Object.entries(VIEWPORTS)) {
       check(path, vp, 'legal name above fold @1280×800', data.fold.name);
       check(path, vp, '501(c)(3) above fold @1280×800', data.fold.status);
       check(path, vp, 'contact above fold @1280×800', data.fold.contact);
-      check(path, vp, 'states Beacon Global, Inc. operates God’s Beacon', data.text.includes(`${LEGAL_NAME} operates God's Beacon`));
+      check(path, vp, 'states Beacon Global, Inc. operates God’s Beacon', data.text.includes(`${LEGAL_NAME} operates God's Beacon`) || data.text.includes(`${LEGAL_NAME} is a 501(c)(3) non-profit organization based in Libertyville, Illinois. We operate God's Beacon`));
     }
     check(path, vp, 'legal name spelled consistently', !/Beacon Global Inc\b/.test(data.text));
 

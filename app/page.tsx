@@ -19,8 +19,7 @@ export default function HomePage() {
             </h1>
             <p className="max-w-[560px] text-lead text-foreground">
               Beacon Global, Inc. is a 501(c)(3) non-profit organization based in Libertyville, Illinois. We operate
-              God&apos;s Beacon. God&apos;s Beacon functions like a faith-based streaming platform, similar to Netflix,
-              making sermons and worship content from churches easily accessible anytime, anywhere.
+              God&apos;s Beacon to help churches share the Gospel with people around the world.
             </p>
             <div className="mt-1.5 flex flex-wrap gap-3">
               <Link href="/about/" className="btn-primary">
@@ -59,9 +58,9 @@ export default function HomePage() {
               God&apos;s Beacon
             </h2>
             <p className="text-body text-foreground">
-              Beacon Global, Inc. operates God&apos;s Beacon. God&apos;s Beacon functions like a faith-based streaming
-              platform, similar to Netflix. Churches share sermons and worship content with a global audience, reaching
-              both lifelong believers and those just beginning their journey of faith.
+              God&apos;s Beacon functions like a faith-based streaming platform, similar to Netflix. Explore sermons
+              and worship content anytime, anywhere—whether you&apos;re a lifelong believer or just beginning your
+              journey of faith.
             </p>
             <p className="text-body text-foreground">God&apos;s Beacon was released in April 2025.</p>
             <ExternalLink href={GODS_BEACON_URL} className="link-cta">
