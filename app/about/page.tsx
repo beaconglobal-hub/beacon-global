@@ -36,8 +36,9 @@ export default function AboutPage() {
           </p>
           <p className={body}>
             Inspired by Mark 16:15 (NIV), “Go into all the world and preach the gospel to all creation,” Beacon Global
-            has created God&apos;s Beacon, which serves as a digital platform where churches can share their messages
-            with a global audience, reaching both lifelong believers and those just beginning their journey of faith.
+            has created God&apos;s Beacon. God&apos;s Beacon functions like a faith-based streaming platform, similar to
+            Netflix. Churches can share their messages with a global audience, reaching both lifelong believers and
+            those just beginning their journey of faith.
           </p>
         </div>
         <ScriptureCard
@@ -78,7 +79,7 @@ export default function AboutPage() {
             Platform Features
           </h2>
           <p className={body}>
-            God&apos;s Beacon functions like a faith-based streaming platform, similar to Netflix, offering:
+            God&apos;s Beacon functions like a faith-based streaming platform, similar to Netflix. Features include:
           </p>
           <ul className="m-0 flex list-none flex-col gap-3.5 p-0">
             {FEATURES.map((f) => (

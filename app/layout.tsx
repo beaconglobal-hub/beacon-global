@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s | Beacon Global, Inc.',
   },
   description:
-    'Beacon Global, Inc. is a 501(c)(3) non-profit organization based in Libertyville, Illinois. We operate God’s Beacon, a digital platform for sermons and worship content.',
+    'Beacon Global, Inc. is a 501(c)(3) non-profit organization based in Libertyville, Illinois. We operate God’s Beacon, which functions like a faith-based streaming platform, similar to Netflix.',
   openGraph: {
     type: 'website',
     siteName: 'Beacon Global, Inc.',
